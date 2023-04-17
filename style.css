@@ -35,8 +35,14 @@ body {
 }
 
 .intro {
+  padding: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.intro > div {
+  width: 375px;
 }
 
 .intro img {
