@@ -39,6 +39,10 @@ body {
   justify-content: center;
 }
 
+.intro img {
+  height: 250px;
+}
+
 .hero {
   color: #F9FAF8;
   font-size: 48px;
@@ -70,6 +74,10 @@ body {
 .card-container {
   display: flex;
   justify-content: center;
+}
+
+.card img {
+  height: 150px;
 }
 
 .quote-container {
