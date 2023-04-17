@@ -16,11 +16,22 @@ body {
 .header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .header p {
   color: #F9FAF8;
   font-size: 24px;
+  font-weight: 700;
+}
+
+.header-links {
+  display: flex;
+  gap: 16px;
+}
+
+.header a {
+  text-decoration: none;
 }
 
 .intro {
@@ -41,7 +52,7 @@ body {
 
 .intro .subtext,
 .prompt .subtext,
-.header-links {
+.header-links a {
   color: #E5E7EB;
 }
 
