@@ -9,17 +9,71 @@ body {
   flex-direction: column;
 }
 
-.header,
-.intro,
-.footer {
+.header-container,
+.intro-container,
+.info-container,
+.quotes-container,
+.prompt-container,
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container,
+.intro-container,
+.footer-container {
   background-color: #1F2937
 }
 
-.header {
-  padding: 10px;
+.info-container,
+.prompt-container {
+  background-color: #F9FAF8;
+}
+
+.quotes-container {
+  background-color: #E5E7EB;
+}
+
+.header-container,
+.footer-container {
+  height: 64px;
+}
+
+.intro-container,
+.info-container,
+.quotes-container,
+.prompt-container {
+  height: 400px;
+}
+
+.header,
+.intro,
+.info,
+.quotes,
+.prompt,
+.footer {
+  width: 900px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+.header,
+.intro,
+.prompt {
+  justify-content: space-between;
+}
+
+.info,
+.quotes,
+.prompt,
+.footer {
+  padding: 25px 75px;
+}
+
+.quotes {
+  flex-direction: column;
 }
 
 .header p {
@@ -28,7 +82,7 @@ body {
   font-weight: 700;
 }
 
-.header-links {
+.header .links {
   display: flex;
   gap: 16px;
 }
@@ -37,26 +91,16 @@ body {
   text-decoration: none;
 }
 
-.intro,
-.info,
-.quote-container,
-.prompt-container {
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .intro {
   gap: 32px;
 }
 
 .intro > div {
-  width: 375px;
+  width: 400px;
 }
 
 .intro img {
-  height: 250px;
+  width: 400px;
 }
 
 .hero {
@@ -66,18 +110,19 @@ body {
 }
 
 .subtext,
-.header-links {
+.header .links {
   font-size: 18px;
 }
 
 .intro .subtext,
-.prompt .subtext,
-.header-links a {
+.prompt-text p,
+.header .links a,
+.footer {
   color: #E5E7EB;
 }
 
 .intro button,
-.prompt-container button {
+.prompt button {
   color: #F9FAF8;
   background-color: #3882F6;
   width: 100px;
@@ -91,7 +136,7 @@ body {
   border-radius: 6px;
 }
 
-.prompt-container button {
+.prompt button {
   border: 1px solid #F9FAF8;
   border-radius: 6px;
 }
@@ -129,29 +174,29 @@ body {
   border-radius: 6px;
 }
 
-.quote-container {
-  background-color: #E5E7EB;
-}
-
-.quote-container p {
+.quotes p {
   color: #1F2937;
   font-weight: 900;
   align-self: flex-end;
 }
 
-.quote-container .quote-width .quote {
+.quotes-container .quotes .quote {
   color: #1F2937;
   font-size: 36px;
   font-weight: 100;
   font-style: italic;
 }
 
-.quote-width {
-  width: 800px;
-  display: flex;
-  flex-direction: column;
+.prompt {
+  background-color: #3882F6;
 }
 
-.prompt-container {
-  background-color: #3882F6;
+.prompt p {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.prompt .subtext {
+  font-size: 18px;
+  font-weight: 500;
 }
